@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+    <div id="myDIV" class="header">
+        <h2 class="h2" style="margin:5px">To Do List (Ro'yxat)</h2>
+        <input type="text" id="myInput" autofocus placeholder="Bu yerga biron narsa kiriting...">
+        <span onclick="newElement()" class="addBtn">Qo'shish</span>
+    </div>
+
+    <ul id="myUL">
+        <li class="checked">Siz kiritgan list shu yerga keladi</li>
+    </ul>
+    
+    <div class="refresh">
+        <button id="clear">Barchasini tozalash !</button>
+        <button id="complate">Barchasini belgilash !</button>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
