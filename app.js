@@ -12,8 +12,6 @@ for (i = 0; i < myNodelist.length; i++) {
     span.appendChild(txt);
     myNodelist[i].appendChild(span);
 }
-
-// Click on a close button to hide the current list item
 let close = document.getElementsByClassName("close");
 var i;
 for (i = 0; i < close.length; i++) {
@@ -22,17 +20,12 @@ for (i = 0; i < close.length; i++) {
         div.style.display = "none";
     }
 }
-
-// Add a "checked" symbol when clicking on a list item
 let list = document.querySelector('ul');
 list.addEventListener('click', function (ev) {
     if (ev.target.tagName === 'LI') {
         ev.target.classList.toggle('checked');
     }
 },);
-
-
-// Create a new list item when clicking on the "Add" button
 function newElement() {
     let li = document.createElement("li");
     let inputValue = document.getElementById("myInput").value;
@@ -59,9 +52,9 @@ function newElement() {
     }
 }
 
-clear.addEventListener('click' , ()=>{
+clear.addEventListener('click', () => {
     document.querySelector("#myUL").classList.add('hidden')
 })
-complate.addEventListener("click" , ()=>{
+complate.addEventListener("click", () => {
     li.classList.toggle('checked')
 })
